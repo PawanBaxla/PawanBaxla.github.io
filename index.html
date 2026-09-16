@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,10 +32,26 @@
         }
 
         /* Typography */
-        h1, h2, h3 { color: #ffffff; }
-        p { color: var(--text-muted); margin-bottom: 1rem; }
-        a { color: var(--primary-color); text-decoration: none; transition: color 0.2s; }
-        a:hover { color: #60a5fa; }
+        h1,
+        h2,
+        h3 {
+            color: #ffffff;
+        }
+
+        p {
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: #60a5fa;
+        }
 
         /* Layout & Containers */
         .container {
@@ -52,7 +69,7 @@
             border-bottom: 1px solid var(--border-color);
             margin-bottom: 3rem;
         }
-        
+
         .brand {
             font-size: 1.5rem;
             font-weight: bold;
@@ -69,10 +86,12 @@
             text-align: center;
             margin-bottom: 4rem;
         }
+
         .hero h1 {
             font-size: 2.5rem;
             margin-bottom: 1rem;
         }
+
         .hero p {
             font-size: 1.1rem;
             max-width: 600px;
@@ -105,6 +124,15 @@
             justify-content: center;
             font-size: 2rem;
             flex-shrink: 0;
+            overflow: hidden;
+        }
+
+        .app-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+            display: block;
         }
 
         .app-title {
@@ -157,9 +185,43 @@
             margin-top: 1.5rem;
             transition: background 0.2s;
         }
+
         .btn:hover {
             background: #2563eb;
             color: #fff;
+        }
+
+        .app-actions {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.25rem;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .app-actions .btn {
+            margin-top: 0;
+        }
+
+        .app-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            align-items: center;
+            font-size: 0.95rem;
+        }
+
+        .app-links a {
+            color: var(--text-muted);
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        .app-links a:hover {
+            color: var(--text-main);
         }
 
         /* Footer */
@@ -170,15 +232,54 @@
             margin-top: 4rem;
         }
 
+        .footer-legal {
+            margin-top: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            align-items: center;
+            font-size: 0.95rem;
+        }
+
+        .footer-legal .legal-group {
+            color: var(--text-muted);
+        }
+
+        .footer-legal strong {
+            color: #ffffff;
+            margin-right: 0.4rem;
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
-            .app-header { flex-direction: column; align-items: center; text-align: center; }
-            .hero h1 { font-size: 2rem; }
-            header { flex-direction: column; gap: 1rem; }
-            .nav-links a { margin: 0 0.8rem; }
+            .app-header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            header {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav-links a {
+                margin: 0 0.8rem;
+            }
+
+            .app-actions {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
         }
     </style>
 </head>
+
 <body>
 
     <div class="container">
@@ -199,7 +300,7 @@
 
         <!-- Apps Section -->
         <section id="apps">
-            
+
             <!-- ============================================== -->
             <!-- APP START: Photo & Video Compressor Pro        -->
             <!-- ============================================== -->
@@ -209,52 +310,166 @@
                     <div class="app-icon"><img src="icon.png" alt="App Icon" class="app-icon"></div>
                     <div>
                         <h2 class="app-title">Compress Photo & Video Resizer</h2>
-                        <p class="app-short-desc">Compress photos & resize videos. Reduce image size to KB and save storage space.</p>
+                        <p class="app-short-desc">Compress photos & resize videos. Reduce image size to KB and save
+                            storage space.</p>
                     </div>
                 </div>
 
                 <div class="app-details">
-                    <p>Are you running out of storage space on your phone? Compress Photo & Video Resizer is the ultimate media optimization tool designed to shrink your files without destroying their visual quality. Whether you are a professional photographer needing to preserve original metadata or an everyday user looking to free up gigabytes of space, this app gives you complete control over your digital gallery.</p>
-                    <p>Unlike basic apps that lock you into generic settings, we offer a Manual-First Dashboard paired with an advanced On-Device AI Assist. You can manually tweak every parameter or let our intelligent algorithm calculate the mathematical sweet spot for maximum file size reduction with zero perceived visual loss.</p>
+                    <p>Are you running out of storage space on your phone? Compress Photo & Video Resizer is the
+                        ultimate media optimization tool designed to shrink your files without destroying their visual
+                        quality. Whether you are a professional photographer needing to preserve original metadata or an
+                        everyday user looking to free up gigabytes of space, this app gives you complete control over
+                        your digital gallery.</p>
+                    <p>Unlike basic apps that lock you into generic settings, we offer a Manual-First Dashboard paired
+                        with an advanced On-Device AI Assist. You can manually tweak every parameter or let our
+                        intelligent algorithm calculate the mathematical sweet spot for maximum file size reduction with
+                        zero perceived visual loss.</p>
                 </div>
 
                 <div class="features-grid">
                     <div class="feature-card">
                         <h3>📸 Advanced Image Compression</h3>
-                        <p><strong>Granular Control:</strong> Adjust quality percentages and resolution exactly how you want it.<br>
-                        <strong>Physical Dimensions:</strong> Resize photos by exact physical dimensions (Cm, Inches, Pixels) and set custom DPI for printing or web uploads.</p>
+                        <p><strong>Granular Control:</strong> Adjust quality percentages and resolution exactly how you
+                            want it.<br>
+                            <strong>Physical Dimensions:</strong> Resize photos by exact physical dimensions (Cm,
+                            Inches, Pixels) and set custom DPI for printing or web uploads.
+                        </p>
                     </div>
-                    
+
                     <div class="feature-card">
                         <h3>🎥 Pro Video Transcoding</h3>
-                        <p><strong>Custom Quality:</strong> Shrink 4K videos to 1080p, 720p, or 480p and adjust target bitrate.<br>
-                        <strong>Hardware Accelerated:</strong> Fast processing utilizing your device's native hardware encoders.<br>
-                        <strong>Audio Config:</strong> Keep original audio, downsample it, or mute entirely.</p>
+                        <p><strong>Custom Quality:</strong> Shrink 4K videos to 1080p, 720p, or 480p and adjust target
+                            bitrate.<br>
+                            <strong>Hardware Accelerated:</strong> Fast processing utilizing your device's native
+                            hardware encoders.<br>
+                            <strong>Audio Config:</strong> Keep original audio, downsample it, or mute entirely.
+                        </p>
                     </div>
 
                     <div class="feature-card">
                         <h3>🧠 Smart AI Auto-Optimize</h3>
-                        <p>Don't want to guess settings? Tap the AI Auto-Optimize button. Our local engine instantly scans media complexity, textures, and edges to apply the absolute best compression settings automatically.</p>
+                        <p>Don't want to guess settings? Tap the AI Auto-Optimize button. Our local engine instantly
+                            scans media complexity, textures, and edges to apply the absolute best compression settings
+                            automatically.</p>
                     </div>
 
                     <div class="feature-card">
                         <h3>🛡️ 100% EXIF Preservation</h3>
-                        <p>Never lose your data. GPS coordinates, camera model, ISO speed, and creation dates are flawlessly copied from the original file to your compressed file. Optimized files inherit custom filenames with timestamps.</p>
+                        <p>Never lose your data. GPS coordinates, camera model, ISO speed, and creation dates are
+                            flawlessly copied from the original file to your compressed file. Optimized files inherit
+                            custom filenames with timestamps.</p>
                     </div>
 
                     <div class="feature-card">
                         <h3>🔍 Live Preview</h3>
-                        <p>Take the guesswork out of compression! Use our Preview Image feature that shows you exactly what the final result will look like in real-time before you hit save.</p>
+                        <p>Take the guesswork out of compression! Use our Preview Image feature that shows you exactly
+                            what the final result will look like in real-time before you hit save.</p>
                     </div>
 
                     <div class="feature-card">
                         <h3>🔒 100% Local & Private</h3>
-                        <p>Your privacy is our highest priority. All media processing and AI calculations happen entirely offline on your local device. We do not upload, store, or transmit your files to any cloud servers.</p>
+                        <p>Your privacy is our highest priority. All media processing and AI calculations happen
+                            entirely offline on your local device. We do not upload, store, or transmit your files to
+                            any cloud servers.</p>
                     </div>
                 </div>
 
-                <!-- Add your Play Store Link Here -->
-                <a href="https://play.google.com/store/apps/details?id=com.aistudio.ultrashrink.xyzwab" class="btn">Get it on Google Play</a>
+                <div class="app-actions">
+                    <a href="https://play.google.com/store/apps/details?id=com.aistudio.ultrashrink.xyzwab" class="btn"
+                        target="_blank" rel="noopener noreferrer">Get it on Google Play</a>
+                    <div class="app-links">
+                        <a href="PrivacyPolicy.html">Privacy Policy</a>
+                        <span>·</span>
+                        <a href="TermsOfService.html">Terms of Service</a>
+                    </div>
+                </div>
+            </article>
+            <!-- ============================================== -->
+            <!-- APP END                                        -->
+            <!-- ============================================== -->
+
+            <!-- ============================================== -->
+            <!-- APP START: Advanced Search: Filter Tool        -->
+            <!-- ============================================== -->
+            <article class="app-container" id="advanced-search">
+                <div class="app-header">
+                    <div class="app-icon"><img src="Advanced Search icon.png" alt="Advanced Search Icon"
+                            class="app-icon"></div>
+                    <div>
+                        <h2 class="app-title">Advanced Search: Filter Tool</h2>
+                        <p class="app-short-desc">Search smarter with powerful filters for documents, media, and
+                            specific formats.</p>
+                    </div>
+                </div>
+
+                <div class="app-details">
+                    <p>Tired of scrolling through pages of SEO clutter, ad-heavy blogs, and irrelevant results?</p>
+                    <p>Advanced Search transforms the way you browse the web. Built for researchers, students, and power
+                        users, it converts simple filter selections into pinpoint queries so you find exact public
+                        files, documents, and resources instantly without typing complex search commands manually.</p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3>📁 Filetype & Format Filtering</h3>
+                        <p>Instantly isolate specific file extensions including PDF, DOCX, XLSX, PPTX, TXT, EPUB, and
+                            open media formats (MP4, MKV, MP3, PNG, SVG) with a single tap.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3>🚫 Anti-Clutter Domain Exclusion</h3>
+                        <p>Eliminate forum spam, content aggregators, or unwanted social platforms from your search
+                            stream to keep results pure and relevant.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3>🎯 Domain-Specific Targeting</h3>
+                        <p>Restrict searches strictly to trusted educational (.edu), government (.gov), or verified
+                            community domains for authoritative sources.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3>📂 Public Directory Finder</h3>
+                        <p>Locate open archives, public datasets, and educational repositories effortlessly without
+                            navigating through messy web landing pages.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3>📅 Date & Recency Filters</h3>
+                        <p>Cut out outdated articles and focus exclusively on recent discussions, modern research, or
+                            newly published material.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3>📱 Clean, Native Interface</h3>
+                        <p>A modern, distraction-free layout adhering to Android's Material design standards with zero
+                            cluttered input—simple chips and bottom menus keep your search bar clean.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3>🔒 Lightweight & 100% Private</h3>
+                        <p>No sign-ups, no tracking, and zero cloud data harvesting. All query construction happens
+                            locally and runs directly via your device's secure web browser.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3>👥 Tailored for Power Users</h3>
+                        <p>Engineered for students, academics, financial analysts, and developers to pull research
+                            papers, datasets, spreadsheets, and technical docs in seconds.</p>
+                    </div>
+                </div>
+
+                <div class="app-actions">
+                    <!-- Replace '#' with your Google Play Store URL once published -->
+                    <a href="https://play.google.com/store/apps/details?id=com.pawanbaxla.advancedsearch" class="btn"
+                        target="_blank" rel="noopener noreferrer">Get it on Google Play</a>
+                    <div class="app-links">
+                        <a href="AdvancedSearchPrivacyPolicy.html">Privacy Policy</a>
+                        <span>·</span>
+                        <a href="AdvancedSearchTermsOfService.html">Terms of Service</a>
+                    </div>
+                </div>
             </article>
             <!-- ============================================== -->
             <!-- APP END                                        -->
@@ -270,15 +485,26 @@
             <h2>Get in Touch</h2>
             <p>Have questions, feedback, or need support for any of my apps?</p>
             <a href="mailto:evilspirit498@gmail.com" class="btn">Email: evilspirit498@gmail.com</a>
-            
-            <p style="margin-top: 3rem; font-size: 0.9rem;">
-                &copy; 2026 Pawan Baxla. All rights reserved. 
-                <br>
-                <a href="PrivacyPolicy.html">Privacy Policy</a> ·
-                <a href="TermsOfService.html">Terms of Service</a>
+
+            <div class="footer-legal">
+                <div class="legal-group">
+                    <strong>Compress Photo & Video Resizer:</strong>
+                    <a href="PrivacyPolicy.html">Privacy Policy</a> ·
+                    <a href="TermsOfService.html">Terms of Service</a>
+                </div>
+                <div class="legal-group">
+                    <strong>Advanced Search:</strong>
+                    <a href="AdvancedSearchPrivacyPolicy.html">Privacy Policy</a> ·
+                    <a href="AdvancedSearchTermsOfService.html">Terms of Service</a>
+                </div>
+            </div>
+
+            <p style="margin-top: 2.5rem; font-size: 0.9rem;">
+                &copy; 2026 Pawan Baxla. All rights reserved.
             </p>
         </footer>
     </div>
 
 </body>
+
 </html>

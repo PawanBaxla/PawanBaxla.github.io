@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Advanced Search | Pawan Baxla</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --surface-color: #1e293b;
+            --surface-hover: #334155;
+            --primary-color: #3b82f6;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border-color: #334155;
+            --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: var(--font-family);
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 2rem 3rem;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            padding: 2rem 0;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .brand {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .page-nav a {
+            margin-left: 1rem;
+            font-weight: 500;
+            color: var(--primary-color);
+        }
+
+        .page-nav a:first-child {
+            margin-left: 0;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: #60a5fa;
+        }
+
+        .content-card {
+            background: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2.5rem;
+        }
+
+        h1, h2, h3 {
+            color: #ffffff;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        .app-badge {
+            display: inline-block;
+            background: rgba(59, 130, 246, 0.15);
+            color: #60a5fa;
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            margin: 0.75rem 0 1.5rem 1.4rem;
+            color: var(--text-muted);
+        }
+
+        li {
+            margin-bottom: 0.75rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--primary-color);
+            color: #fff;
+            padding: 0.8rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            transition: background 0.2s;
+        }
+
+        .btn:hover {
+            background: #2563eb;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 0 0;
+            color: var(--text-muted);
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .content-card {
+                padding: 1.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="brand">Pawan Baxla</div>
+            <nav class="page-nav">
+                <a href="index.html">Home</a>
+                <a href="AdvancedSearchTermsOfService.html">Terms of Service</a>
+            </nav>
+        </header>
+
+        <article class="content-card">
+            <span class="app-badge">Advanced Search: Filter Tool</span>
+            <h1>Privacy Policy</h1>
+            <p><strong>Last Updated:</strong> September 16, 2026</p>
+
+            <h3>1. Introduction</h3>
+            <p>Advanced Search: Filter Tool (also known as, and referred to as, "Advanced Search", hereinafter referred to as the "App"), developed by Pawan Baxla ("we", "our", or "us"), is committed to safeguarding your digital privacy. This Privacy Policy explains our practices regarding data collection, transmission, and operational privacy when you install and utilize our mobile search utility.</p>
+
+            <h3>2. Core Privacy Principle: 100% Local Query Generation</h3>
+            <p>The App is built strictly on an on-device, local-first utility architecture:</p>
+            <ul>
+                <li><strong>Local Processing:</strong> All keyword string parsing, operator concatenations (Boolean logic, syntax parameters, filetype selectors), and filter modifications occur entirely on your local device hardware.</li>
+                <li><strong>No Query Harvesting:</strong> We do not operate external search index servers, user telemetry proxies, or query collection databases. Your search inputs, keywords, visited domains, and active filter parameters never touch our servers.</li>
+                <li><strong>Direct Browser Handoff:</strong> Once a query is constructed, it is executed strictly on your device via standard Android Intents using your default web browser or Chrome Custom Tabs directly to public search engines.</li>
+            </ul>
+
+            <h3>3. Data Retention & System Permissions</h3>
+            <p>To operate seamlessly on modern Android platforms (Android 8.0 through Android 17+), the App requires minimal runtime permissions. The App does not request, read, or harvest contacts, personal media files, location data, or device storage files. Any locally saved "Search Recipes" or custom exclusion lists remain in isolated local application sandboxes (SharedPreferences / Room) and are deleted upon application uninstall.</p>
+
+            <h3>4. Subscriptions, In-App Purchases, and Financial Data (Google Play Billing)</h3>
+            <p>To provide premium features (such as custom search presets, advanced directory filters, and ad-free usage), the App integrates the official Google Play Billing library:</p>
+            <ul>
+                <li><strong>Payment Handling:</strong> We do not collect, process, or store credit card credentials, bank accounts, or billing addresses. All financial transactions are securely processed directly by Google Play.</li>
+                <li><strong>Token Validation:</strong> We receive only cryptographically signed, non-personally identifiable purchase tokens or digital receipts from Google Play to confirm your subscription or entitlement status and unlock premium capabilities locally.</li>
+            </ul>
+
+            <h3>5. Third-Party SDK Data Collection (Google AdMob)</h3>
+            <p>To keep core utility functions free, the App incorporates third-party advertising SDKs, specifically Google AdMob. AdMob may programmatically collect non-personally identifiable diagnostic and telemetry data directly from your device:</p>
+            <ul>
+                <li><strong>Device Identifiers:</strong> Google Advertising ID (AAID), Android ID.</li>
+                <li><strong>Telemetry & Network Data:</strong> Device brand, hardware model, operating system version, and mobile network carrier.</li>
+                <li><strong>Performance & Diagnostics:</strong> App crash reports, latency metrics, and user engagement metrics with banner, native, or rewarded video advertisements.</li>
+            </ul>
+            <p>This information is processed exclusively to deliver contextual or personalized ads and monitor operational stability. For full details on Google’s data handling, refer to the <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">Google Partner Privacy Policy</a>.</p>
+
+            <h3>6. External Links & Third-Party Search Engines</h3>
+            <p>The App functions as an input builder for third-party web search services (e.g., Google Search). When you execute a query, you exit our application sandbox and enter third-party web destinations governed by their respective privacy policies and terms of service. We hold no responsibility for the data collection, cookies, or tracking mechanisms employed by external search engines or third-party web pages you visit.</p>
+
+            <h3>7. Children's Privacy</h3>
+            <p>The App is not directed toward children under the age of 13, nor do we knowingly collect personally identifiable information from children. Because all query synthesis takes place locally on-device, no child or adult personal data is ever stored on external cloud infrastructure.</p>
+
+            <h3>8. Changes to this Privacy Policy</h3>
+            <p>We reserve the right to revise this Privacy Policy at our discretion. Any modifications will be updated directly on our web hosting URL and reflected inside the Google Play Store listing. Continued usage of the App following updates constitutes full acceptance of the revised policy.</p>
+
+            <h3>9. Contact Information</h3>
+            <p>For legal notices, technical questions, or privacy inquiries regarding this application, please contact:</p>
+            <ul>
+                <li><strong>Developer:</strong> Pawan Baxla</li>
+                <li><strong>Email:</strong> <a href="mailto:Evilspirit498@gmail.com">Evilspirit498@gmail.com</a></li>
+            </ul>
+        </article>
+
+        <footer>
+            <a href="index.html" class="btn">Back to Home</a>
+        </footer>
+    </div>
+
+</body>
+</html>
